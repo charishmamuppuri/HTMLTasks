@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            table-layout: fixed;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: none; 
+        }
+
+        th {
+            width: 250px; 
+            height: 10px; 
+            background-color: #75e9e7a7;
+            color: black;
+            position: relative;
+        }
+
+        td {
+            width: 250px; 
+            height: 10px; 
+            background-color: #75e9e7a7;
+            color: black;
+            position: relative;
+        }
+
+        td::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid black; 
+            border-radius: 25%;
+        }
+        th:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid black; 
+            border-radius: 25%;
+        }
+
+        .shapes-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+            margin-top: 20px;
+        }
+
+        .shape {
+            width: 50px;
+            height: 50px;
+            background-color: white; 
+            border: 2px solid green; 
+            margin: 5px; 
+        }
+
+        .square {
+            border-radius: 5px; 
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+        .cylindrical {
+            border: 2px solid black; 
+            border-radius: 10px; 
+            margin: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h2><a href="index.html">INDEX PAGE</a></h2> 
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th >Firstname</th>
+                <th >Lastname</th>
+                <th >Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+    <div class="shapes-container">
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape square"></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-container {
+            display: flex; 
+            justify-content: center; 
+        }
+        .vertical-nav {
+            display: inline-block;
+            margin-right: 20px; 
+        }
+
+        .vertical-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            width: 180px;
+            border: 5px solid black;
+            border-style: double;
+        }
+
+        .vertical-nav li a {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .vertical-nav li a:hover {
+            background-color: yellow;
+        }
+
+        .horizontal-nav {
+            display: inline-block;
+        }
+
+        .horizontal-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(169, 170, 171);
+            display: flex; 
+            border: 5px solid black;
+            border-style: double;
+        }
+
+        .horizontal-nav li {
+            padding: 0 15px; 
+            border-right: 2px solid black; 
+        }
+
+        .horizontal-nav li:last-child {
+            border-right: none; 
+        }
+
+        .horizontal-nav li a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .horizontal-nav li a:hover {
+            background-color: rgb(104, 104, 98);
+        }
+
+        .heading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Navigation Bar</h1>
+    </div>
+    
+    <h2><a href="index.html">INDEX PAGE</a></h2> 
+
+    <div class="nav-container">
+        <div class="vertical-nav">
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

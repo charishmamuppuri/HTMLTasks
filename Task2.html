@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .outer-box {
+    border: 2px solid black;
+    padding: 10px;
+    width: 250px;
+  }
+
+  .outer-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .inner-list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    
+  }
+  .custom-bullet {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .list-item {
+    margin-bottom: 10px; 
+  }
+</style>
+</head>
+<body>
+
+<h2><a href="index.html">INDEX PAGE</a></h2> 
+
+<div class="outer-box">
+  <ul class="outer-list">
+    <li class="list-item"><span></span> Lists can be nested (list inside list):<br><br>
+      <ul class="inner-list">
+        <li><span class="bullet"></span> Coffee</li>
+        <li><span class="bullet"></span> Tea
+          <ul class="inner-list">
+            <li>&emsp;<span class="custom-bullet" style="width: 5px; height: 5px;"></span> Black Tea</li>
+            <li>&emsp;<span class="custom-bullet" style="width: 5px; height: 5px;"></span> Green Tea</li>
+          </ul>
+        </li>
+        <li><span class="bullet"></span> Milk</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

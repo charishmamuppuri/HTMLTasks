@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+  }
+  .checkbox-container input[type="radio"] {
+    display: none;
+  }
+  .checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%; 
+  }
+  
+  .checkbox-container input[type="radio"]:checked + .checkbox-checkmark:after {
+    content: "\2713"; 
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    font-size: 18px;
+    color: black;
+  }
+  .registration-header {
+    color: blue; 
+    text-align: center;
+    padding: 10px;
+    font-size: 28px; 
+  }
+</style>
+</head>
+<body>
+<h2><a href="index.html">INDEX PAGE</a></h2> 
+<h1 class="registration-header">Registration Form</h1>
+
+<table style="border-collapse: collapse; width: 70%; border: 2px solid black;">
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">First Name</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Last Name</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Email</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Password</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Re-enter Password</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Gender:</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <label class="checkbox-container">Male
+        <input type="radio" name="gender" value="male">
+        <span class="checkbox-checkmark"></span>
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <label class="checkbox-container">Female
+        <input type="radio" name="gender" value="female">
+        <span class="checkbox-checkmark"></span>
+      </label> 
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Age:</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Phone Number</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Address</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">State</td>
+    <td style="border: 1px solid black; padding: 8px;"></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Country</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <select style="width: 100%;">
+        <option value="choose">Choose Country</option>
+        <option value="country1">India</option>
+        <option value="country2">Others</option>
+        <!-- Add more country options here -->
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; font-weight: bold; color: black;">Languages known</td>
+    <td style="border: 1px solid black; padding: 8px;">
+        <label class="checkbox-container"><input type="checkbox" name="language" value="english"> English</label>
+        <label class="checkbox-container"><input type="checkbox" name="language" value="kannada"> Kannada</label>
+        <label class="checkbox-container"><input type="checkbox" name="language" value="hindi"> Hindi</label>
+        <label class="checkbox-container"><input type="checkbox" name="language" value="telugu"> Telugu</label>
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: 1px solid black; padding: 8px;">
+      <div style="background-color: blue; width: 20px; height: 20px; display: inline-block; border-radius: 4px;">
+        <div style="color: white; text-align: center; line-height: 20px;">✓</div>
+      </div>
+      Hereby I declare all the given details are true.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: 1px solid black; padding: 8px; text-align: right;">
+      <a href="#" style="color: black; text-decoration: none;">Log in to <span style="color: violet; text-decoration: underline;">Ethnus</span> Website</a>
+    </td>
+  </tr>
+</table>
+<br>
+<div style="text-align: center;">
+  <div style="border: 2px solid black; display: inline-block; padding: 5px;">Register</div>
+</div>
+</body>
+</html>
